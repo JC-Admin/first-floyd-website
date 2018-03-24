@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="media-queries.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <!-- big bold main section with picture on top-->
+  <section class="splash">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none">
+      <a class="navbar-brand " href="# ">THE PINK FLOYD</a>
+      <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarText " aria-controls="navbarText " aria-expanded="false " aria-label="Toggle navigation ">
+    <span class="navbar-toggler-icon "></span>
+  </button>
+      <div class="collapse navbar-collapse " id="navbarText ">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active ">
+            <a class="nav-link " href="# ">HOME<span class="sr-only ">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#secondlist ">ACCOMPLISHMENTS</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#artists ">PICTURES</a>
+          </li>
+
+        </ul>
+
+
+      </div>
+    </nav>
+
+    <div class="main ">
+
+
+    </div>
+  </section>
+
+  <section id="secondlist">
+    <section class='secondlist'>
+
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h2>Discography</h2>
+            <img src='images/discography.png'>
+            <p> Ranging from the "Piper in the Gates of Dawn" to "Dark Side of the Moon," the Floyd continued to grow into the iconic band that delivered content accompanied by awe-inspiring instrumentals </p>
+          </div>
+          <div class="col-md-4">
+            <h2>Awards</h2>
+            <img src='images/award.png'>
+            <p>The psychedelic band was responsible for creating the song "Maroon" which received a grammy for its beautiful guitar and keys.</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Legacy</h2>
+            <img src='images/legacy.png'>
+            <p>50+ years later and the Floyd continues to hold their place as one of the top bands. "The Darkside of the Moon" is an album that remains a best seller despite its age.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+  </section>
+
+  <section id="artists">
+    <section class="artists">
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="images/roger.jpg" alt="Card image cap">
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="images/david.jpg" alt="Card image cap">
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="images/syd.jpg" alt="Card image cap">
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+  <section class="artistsTwo">
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="images/wright.jpg" alt="Card image cap">
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="images/nick.jpg" alt="Card image cap">
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="images/pigs.jpg" alt="Card image cap">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="thirdsec">
+    <div class="info">
+      <h2>Shine on, You Crazy Diamond.</h2>
+      <hr>
+      <p>The Floyd's discography ages like fine wine. Eliciting conversation and introspection, their albums continue to leave listeners in amazement. Each album tackling different topics with the most thought provoking lyrics. Even more enthralling are the instrumentations
+        that accompany the creative themes. </p>
+    </div>
+  </section>
+
+  <section class="wall">
+    <div class="content">
+      <h2>Stay Informed, Sign Up.</h2>
+      <hr>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="contact">
+      <p>&copy Copyright, 2017, Juan Calle. All rights reserved.</p>
+    </div>
+  </section>
+
+  <!--jquery required for scrolling effect -->
+  <script src="js/jquery.js"></script>
+  <!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->
+  <script type='text/javascript'>
+    jQuery(document).ready(function() {
+      jQuery('.button').click(function() {
+        targetName = jQuery(this).attr('href');
+        targetLocation = jQuery(targetName).offset().top;
+        jQuery('html, body').animate({
+          scrollTop: targetLocation
+        }, 'slow');
+        return false;
+      });
+    });
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 " crossorigin="anonymous "></script>
+</body>
+
+</html>
